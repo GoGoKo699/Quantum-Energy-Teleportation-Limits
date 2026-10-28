@@ -1,0 +1,427 @@
+{
+  "checks": {
+    "check_critical_ising.py": {
+      "absolute_tolerance": 2e-10,
+      "check": "critical_ising_local_stiffness",
+      "coupling_J": 1.0,
+      "numpy_version": "2.3.5",
+      "ok": true,
+      "python_version": "3.12.14",
+      "rings": [
+        {
+          "N": 4,
+          "first_excited_parity": -0.9999999999999999,
+          "gap_formula_over_J": 0.397824734759316,
+          "gap_over_J": 0.397824734759312,
+          "generalized_spectrum_over_J": [
+            0.4795591778089353,
+            4.079093459499692,
+            4.558652637308631
+          ],
+          "ground_energy_over_J": -5.226251859505506,
+          "ground_parity": 1.0000000000000004,
+          "kappa_formula_over_J": 0.4795591778089341,
+          "kappa_over_J": 0.4795591778089353,
+          "lambda_B": 0.17335925878090588,
+          "magnetization_formula": 0.6532814824381883,
+          "maximum_absolute_errors": {
+            "covariance_form": 4.440892098500626e-16,
+            "excitation_form": 1.3322676295501878e-15,
+            "generalized_spectrum": 2.6645352591003757e-15,
+            "global_gap": 3.9968028886505635e-15,
+            "ground_energy": 0.0
+          },
+          "minimum_uniform_slack_eigenvalue_over_J": 0.05194238792452999,
+          "unitary_only_kappa_over_J": 1.3065629648763766
+        },
+        {
+          "N": 5,
+          "first_excited_parity": -0.9999999999999998,
+          "gap_formula_over_J": 0.31676888064907255,
+          "gap_over_J": 0.3167688806490787,
+          "generalized_spectrum_over_J": [
+            0.44001593745041045,
+            4.014965149206227,
+            4.4549810866566375
+          ],
+          "ground_energy_over_J": -6.4721359549995805,
+          "ground_parity": 0.9999999999999998,
+          "kappa_formula_over_J": 0.4400159374504086,
+          "kappa_over_J": 0.44001593745041045,
+          "lambda_B": 0.17639320225002103,
+          "magnetization_formula": 0.6472135954999579,
+          "maximum_absolute_errors": {
+            "covariance_form": 6.661338147750939e-16,
+            "excitation_form": 2.8939286048750834e-15,
+            "generalized_spectrum": 5.329070518200751e-15,
+            "global_gap": 6.161737786669619e-15,
+            "ground_energy": 8.881784197001252e-16
+          },
+          "minimum_uniform_slack_eigenvalue_over_J": 0.03307535014898677,
+          "unitary_only_kappa_over_J": 1.2944271909999159
+        },
+        {
+          "N": 6,
+          "first_excited_parity": -0.9999999999999973,
+          "gap_formula_over_J": 0.26330499517479167,
+          "gap_over_J": 0.26330499517479833,
+          "generalized_spectrum_over_J": [
+            0.41879252823268964,
+            3.9818231542885747,
+            4.400615682521265
+          ],
+          "ground_energy_over_J": -7.727406610312547,
+          "ground_parity": 1.0000000000000007,
+          "kappa_formula_over_J": 0.418792528232692,
+          "kappa_over_J": 0.41879252823268964,
+          "lambda_B": 0.178024724570311,
+          "magnetization_formula": 0.6439505508593789,
+          "maximum_absolute_errors": {
+            "covariance_form": 1.2868344093854486e-15,
+            "excitation_form": 5.072189717091613e-15,
+            "generalized_spectrum": 2.6645352591003757e-15,
+            "global_gap": 6.661338147750939e-15,
+            "ground_energy": 0.0
+          },
+          "minimum_uniform_slack_eigenvalue_over_J": 0.022906142657006634,
+          "unitary_only_kappa_over_J": 1.2879011017187578
+        },
+        {
+          "N": 8,
+          "first_excited_parity": -1.000000000000002,
+          "gap_formula_over_J": 0.1969828067143285,
+          "gap_over_J": 0.19698280671432755,
+          "generalized_spectrum_over_J": [
+            0.39787353056578256,
+            3.9499822626728696,
+            4.347855793238651
+          ],
+          "ground_energy_over_J": -10.251661790966027,
+          "ground_parity": 0.9999999999999998,
+          "kappa_formula_over_J": 0.3978735305657813,
+          "kappa_over_J": 0.39787353056578256,
+          "lambda_B": 0.1796355690323116,
+          "magnetization_formula": 0.6407288619353766,
+          "maximum_absolute_errors": {
+            "covariance_form": 4.440892098500626e-16,
+            "excitation_form": 3.552713678800501e-15,
+            "generalized_spectrum": 2.6645352591003757e-15,
+            "global_gap": 9.43689570931383e-16,
+            "ground_energy": 1.7763568394002505e-15
+          },
+          "minimum_uniform_slack_eigenvalue_over_J": 0.012849723772808685,
+          "unitary_only_kappa_over_J": 1.2814577238707532
+        }
+      ],
+      "scope": "Finite checks validate normalization and parity conventions. The all-N stiffness bound is proved analytically in science/local_stiffness.md. No critical spatial exponent is tested.",
+      "thermodynamic_constants": {
+        "energy_information_coefficient_over_J": 148.25181197400573,
+        "generalized_spectrum_over_J": [
+          0.3712519067715179,
+          3.910593940293385,
+          4.281845847064903
+        ],
+        "h_B_over_J": 2.23606797749979,
+        "kappa_over_J": 0.3712519067715179,
+        "lambda_B": 0.1816901138162093,
+        "magnetization": 0.6366197723675814
+      },
+      "uniform_constants_for_all_N_at_least_4": {
+        "h_B_over_J": 2.23606797749979,
+        "kappa_lower_bound_over_J": 0.3712519067715179,
+        "lambda_B_lower_bound": 0.17335925878090586
+      }
+    },
+    "check_energy_information.py": {
+      "channel_support_identity": {
+        "all_operator_variance_rank": 7,
+        "centered_energy_norm": 2.010660171779821,
+        "channels": [
+          {
+            "channel": "unitary_angle_0.2",
+            "ground_cost": 0.03897646383450482,
+            "max_conditional_identity_error": 1.6711069443220836e-16,
+            "q_squared": 0.01806947933949892,
+            "response_norm_ratio": 0.11059201443366201
+          },
+          {
+            "channel": "unitary_angle_0.0001",
+            "ground_cost": 9.94353884195092e-09,
+            "max_conditional_identity_error": 2.2051588220986626e-16,
+            "q_squared": 4.550429980060276e-09,
+            "response_norm_ratio": 0.09261156900038574
+          },
+          {
+            "channel": "unitary_angle_1e-06",
+            "ground_cost": 9.943601857462054e-13,
+            "max_conditional_identity_error": 1.340326572168763e-16,
+            "q_squared": 4.550429988240683e-13,
+            "response_norm_ratio": 0.09260476696331751
+          },
+          {
+            "channel": "amplitude_damping_0.0001",
+            "ground_cost": 1.767855345733712e-05,
+            "max_conditional_identity_error": 6.212139635163139e-17,
+            "q_squared": 2.5000468773438965e-05,
+            "response_norm_ratio": 0.002402014499094607
+          },
+          {
+            "channel": "amplitude_damping_1e-08",
+            "ground_cost": 1.767766961805205e-09,
+            "max_conditional_identity_error": 5.3940294302579306e-17,
+            "q_squared": 2.5000000046875002e-09,
+            "response_norm_ratio": 2.4020116376729722e-05
+          },
+          {
+            "channel": "weak_excitation_into_unoccupied_level",
+            "ground_cost": 1.8999999999999998e-06,
+            "max_conditional_identity_error": 2.1834815314321354e-16,
+            "q_squared": 1e-06,
+            "response_norm_ratio": 0.00023624081615916903
+          },
+          {
+            "channel": "identity_on_support_only",
+            "ground_cost": 1.8304167123440577e-31,
+            "max_conditional_identity_error": 0.0,
+            "q_squared": 1.2325951644078308e-32,
+            "response_norm_ratio": 0.0
+          },
+          {
+            "channel": "random_isometry_0_rank_1",
+            "ground_cost": 2.275427679721178,
+            "max_conditional_identity_error": 4.448508863106003e-16,
+            "q_squared": 0.8984359434817737,
+            "response_norm_ratio": 0.35080628045676
+          },
+          {
+            "channel": "random_isometry_1_rank_2",
+            "ground_cost": 1.5373030177857396,
+            "max_conditional_identity_error": 8.882868333007365e-16,
+            "q_squared": 0.8371777627995838,
+            "response_norm_ratio": 0.2511817549949002
+          },
+          {
+            "channel": "random_isometry_2_rank_4",
+            "ground_cost": 1.6865837161375687,
+            "max_conditional_identity_error": 4.450673028270728e-16,
+            "q_squared": 0.8292223765012223,
+            "response_norm_ratio": 0.2522272540337013
+          },
+          {
+            "channel": "random_isometry_3_rank_6",
+            "ground_cost": 1.961781793847281,
+            "max_conditional_identity_error": 4.440892098500626e-16,
+            "q_squared": 0.8099999033664531,
+            "response_norm_ratio": 0.3057294216821792
+          },
+          {
+            "channel": "random_isometry_4_rank_1",
+            "ground_cost": 2.1217836218671957,
+            "max_conditional_identity_error": 2.237726045655905e-16,
+            "q_squared": 0.8071681059067197,
+            "response_norm_ratio": 0.42211091683229324
+          },
+          {
+            "channel": "random_isometry_5_rank_2",
+            "ground_cost": 2.0766435588093586,
+            "max_conditional_identity_error": 4.441434166503682e-16,
+            "q_squared": 0.840894521688936,
+            "response_norm_ratio": 0.3249112846434867
+          },
+          {
+            "channel": "random_isometry_6_rank_4",
+            "ground_cost": 1.697876925271594,
+            "max_conditional_identity_error": 4.440892098500626e-16,
+            "q_squared": 0.7985010859641625,
+            "response_norm_ratio": 0.268792736286559
+          },
+          {
+            "channel": "random_isometry_7_rank_6",
+            "ground_cost": 1.8219494309871664,
+            "max_conditional_identity_error": 4.445768331151997e-16,
+            "q_squared": 0.8075758651189706,
+            "response_norm_ratio": 0.2778497294321206
+          },
+          {
+            "channel": "random_isometry_8_rank_1",
+            "ground_cost": 1.1021306496004262,
+            "max_conditional_identity_error": 5.551115123125783e-17,
+            "q_squared": 0.5307195294930453,
+            "response_norm_ratio": 0.33505572065832195
+          },
+          {
+            "channel": "random_isometry_9_rank_2",
+            "ground_cost": 1.763405697847797,
+            "max_conditional_identity_error": 6.664589960562512e-16,
+            "q_squared": 0.9108810562540336,
+            "response_norm_ratio": 0.29292573696147206
+          },
+          {
+            "channel": "random_isometry_10_rank_4",
+            "ground_cost": 1.7840549499357379,
+            "max_conditional_identity_error": 4.445768331151997e-16,
+            "q_squared": 0.8743483017820461,
+            "response_norm_ratio": 0.27446008591955934
+          },
+          {
+            "channel": "random_isometry_11_rank_6",
+            "ground_cost": 1.9325782722153457,
+            "max_conditional_identity_error": 4.442111658486589e-16,
+            "q_squared": 0.8649750319033791,
+            "response_norm_ratio": 0.3028339423095519
+          }
+        ],
+        "channels_checked": 19,
+        "conditional_branches": 95,
+        "global_gap": 0.7071067811865471,
+        "local_dimensions": {
+          "A": 4,
+          "B": 4,
+          "C": 8
+        },
+        "maximum_conditional_identity_error": 8.882868333007365e-16,
+        "maximum_response_norm_ratio": 0.42211091683229324,
+        "maximum_support_error": 0.0,
+        "minimum_nonzero_q_squared": 4.550429988240683e-13,
+        "minimum_outcome_probability": 7.545197288897203e-11,
+        "positive_gain_branches": 4,
+        "stiffness": 0.7071067811865472,
+        "support_eigenvalues": {
+          "A": 0.25,
+          "B": 0.25
+        },
+        "support_ranks": {
+          "A": 2,
+          "B": 2
+        }
+      },
+      "four_qubit_correlations": {
+        "cases": [
+          {
+            "correlation_lower_over_link": 0.2678265497487808,
+            "correlation_upper_over_link": 0.41166237132184663,
+            "energy_over_link_squared": 0.0007404232150209933,
+            "gap": 1.16533864523785,
+            "lambda_b": 0.05299814995459063,
+            "link": 0.1
+          },
+          {
+            "correlation_lower_over_link": 0.2682828891739101,
+            "correlation_upper_over_link": 0.41240076622427546,
+            "energy_over_link_squared": 0.0007449099213930573,
+            "gap": 1.2145025334397106,
+            "lambda_b": 0.052805517347475246,
+            "link": 0.03
+          },
+          {
+            "correlation_lower_over_link": 0.26832312629830657,
+            "correlation_upper_over_link": 0.41246471333927903,
+            "energy_over_link_squared": 0.0007453064082254931,
+            "gap": 1.2288476330039835,
+            "lambda_b": 0.05278852869628323,
+            "link": 0.01
+          },
+          {
+            "correlation_lower_over_link": 0.26832770449743465,
+            "correlation_upper_over_link": 0.41247159175062936,
+            "energy_over_link_squared": 0.0007453515297020114,
+            "gap": 1.2338985677568841,
+            "lambda_b": 0.05278659568330053,
+            "link": 0.003
+          }
+        ],
+        "curvature_at_zero": 2.683281572999748,
+        "extraction_coefficient": 0.0007453559924999277,
+        "first_order_equation_residual": 1.1102230246251565e-16,
+        "force_derivative": 0.08944271909999146,
+        "maximum_direct_energy_error": 5.774655588235665e-16,
+        "xx_correlation_derivative": 0.2683281572999748
+      },
+      "numpy_version": "2.3.5",
+      "ok": true,
+      "seed": 20261028,
+      "status": "passed",
+      "three_qubit_information": {
+        "asymptotic_energy_over_information_at_J1": 0.07151514773887058,
+        "cases": [
+          {
+            "J": 1.0,
+            "extracted_energy": 0.0,
+            "measurement_strength": 0.0,
+            "mutual_information": 1.1102230246251565e-16
+          },
+          {
+            "J": 1.0,
+            "extracted_energy": 2.9462781825401685e-08,
+            "measurement_strength": 0.001,
+            "mutual_information": 4.1197967437511807e-07
+          },
+          {
+            "J": 1.0,
+            "extracted_energy": 1.178498207692862e-05,
+            "measurement_strength": 0.02,
+            "mutual_information": 0.0001648024074102361
+          },
+          {
+            "J": 1.0,
+            "extracted_energy": 0.002645054243285373,
+            "measurement_strength": 0.3,
+            "mutual_information": 0.03763278455065544
+          },
+          {
+            "J": 1.0,
+            "extracted_energy": 0.01853237411259309,
+            "measurement_strength": 0.8,
+            "mutual_information": 0.3015134312310504
+          },
+          {
+            "J": 1.0,
+            "extracted_energy": 0.028686908485036862,
+            "measurement_strength": 1.0,
+            "mutual_information": 0.5623351446188084
+          },
+          {
+            "J": 2.3,
+            "extracted_energy": 0.0,
+            "measurement_strength": 0.0,
+            "mutual_information": 1.1102230246251565e-16
+          },
+          {
+            "J": 2.3,
+            "extracted_energy": 6.77643981984239e-08,
+            "measurement_strength": 0.001,
+            "mutual_information": 4.1197967437511807e-07
+          },
+          {
+            "J": 2.3,
+            "extracted_energy": 2.710545877693583e-05,
+            "measurement_strength": 0.02,
+            "mutual_information": 0.0001648024074102361
+          },
+          {
+            "J": 2.3,
+            "extracted_energy": 0.006083624759556356,
+            "measurement_strength": 0.3,
+            "mutual_information": 0.03763278455065544
+          },
+          {
+            "J": 2.3,
+            "extracted_energy": 0.04262446045896409,
+            "measurement_strength": 0.8,
+            "mutual_information": 0.3015134312310504
+          },
+          {
+            "J": 2.3,
+            "extracted_energy": 0.06597988951558478,
+            "measurement_strength": 1.0,
+            "mutual_information": 0.5623351446188084
+          }
+        ],
+        "maximum_energy_formula_error": 2.170574337502756e-16,
+        "maximum_information_formula_error": 4.440892098500626e-16
+      }
+    }
+  },
+  "ok": true,
+  "python_version": "3.12.14"
+}
