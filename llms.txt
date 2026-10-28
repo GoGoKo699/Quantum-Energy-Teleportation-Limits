@@ -1,0 +1,58 @@
+# Quantum Energy Teleportation Limits
+
+This repository studies the average decrease of interacting-system energy during
+one-way, instantaneous quantum energy teleportation from a pure ground state.
+The central bound applies to arbitrary Alice instruments and arbitrary
+outcome-dependent local CPTP feedback at Bob.
+
+Scientific entrypoints:
+- README.md: question, principal inequality, result map and reproduction command.
+- science/model.md: regions, channel model, energy ledger, exact assumptions,
+  notation and the result map.
+- science/energy_information.md: support compression, reference cost, quadratic
+  branch bound, Pinsker step and the all-channel information theorem.
+- science/local_stiffness.md: all-operator generalized eigenvalue, gap corollary,
+  exact periodic critical Ising certificate and uniform thermodynamic constants.
+- science/correlation_bounds.md: support-aware Alice effect normalization,
+  outcome-independent squared correlation bound and spatial envelope conditions.
+- science/sharpness.md: exact three-qubit information example and four-qubit
+  weak-link correlation example, with derivations and limiting constants.
+- science/interpretation.md: why the response is quadratic, local versus global
+  energy scales, interaction energy, controller accounting and claim boundaries.
+- references/RELATED_WORK.md: theorem-level prior-work comparison and attribution.
+- references/references.bib: primary-source bibliography.
+- verification/README.md: commands, analytical versus numerical evidence.
+- verification/run_all.py: deterministic finite verification runner.
+
+Reader routes:
+- For the physical argument: model, energy_information, interpretation.
+- For the general converse: model and the complete energy_information proof.
+- For criticality: local_stiffness, including the full complex operator space.
+- For spatial decay: correlation_bounds and its uniformity assumptions.
+- For exponent sharpness: sharpness; do not confuse coupling/measurement limits
+  with distance limits.
+- For reproduction: verification/README.md and the actual scripts.
+
+Preserve the following distinctions:
+- C contains every Hamiltonian term Bob can change, not only Bob's bare site.
+- The output for arbitrary channels is system-energy decrease, not an automatic
+  equality with net controller work.
+- The local stiffness condition includes every local operator, including
+  non-Hermitian Kraus operators and maps out of the local ground-state support.
+- Quotient only null-variance directions; retain zero stiffness at nonzero variance.
+- The information theorem needs Bob's local marginal conditioning. The
+  correlation-square corollary also needs Alice's conditioning and support rank.
+- A positive bulk gap above a unique ground state is sufficient, not necessary,
+  for positive local stiffness.
+- Rank-deficient marginals use their smallest positive eigenvalue. Uniformity
+  across a family must be established separately.
+- Every measurement outcome is probability weighted. Successful-postselection
+  energy alone is a different quantity.
+- The instantaneous model includes no energy propagation between the operations.
+- The exact examples prove sharp information/correlation powers, not a sharp
+  universal distance exponent or optimal prefactor.
+- Earlier model-specific linear information laws and squared-correlation
+  protocols are prior work. Read the related-work comparison before claiming
+  originality.
+- Finite numerical agreement is not proof of the universal or asymptotic claim,
+  and it is not external peer review.
