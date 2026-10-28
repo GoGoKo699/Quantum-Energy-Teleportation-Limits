@@ -49,6 +49,14 @@ Start with the [operational model and result map](science/model.md), then follow
 
 The [interpretation](science/interpretation.md) connects the results, the energy ledger and the assumptions. [Related work](references/RELATED_WORK.md) compares actual statements and operational models; the [bibliography](references/references.bib) supplies the primary sources.
 
+## Learn the project
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](learning/ANCHOR_AND_BRIDGE.md) identifies the relevant parts of the author's available text, translates the notation and entropy conventions, and connects its channel and information tools to the energy bound developed here.
+
+The [30-milestone map](learning/MILESTONES.md) gives a common understanding route through the project. Its **10 background/preliminaries milestones** assemble states, operations, local energy, distinguishability and information into the QET setting. Its **20 narrative/innovation milestones** follow the balance between cost and response through the information ceiling, spatial consequence, critical-chain certificate, sharpness examples and physical interpretation.
+
+Each milestone has a central question, an understanding target, dependencies, a conceptual connection and source pointers. Use the bridge alongside the map for self-directed study. The [reading guide](llms.txt) routes scientific and learning questions to their authoritative files; the direct proof route above remains available for specialist reading.
+
 ## Reproduce the finite checks
 
 With Python 3.12 and NumPy installed, run from the repository root:

@@ -6,7 +6,8 @@ The central bound applies to arbitrary Alice instruments and arbitrary
 outcome-dependent local CPTP feedback at Bob.
 
 Scientific entrypoints:
-- README.md: question, principal inequality, result map and reproduction command.
+- README.md: question, principal inequality, scientific and learning routes,
+  result map, reproduction command, purpose and contact.
 - science/model.md: regions, channel model, energy ledger, exact assumptions,
   notation and the result map.
 - science/energy_information.md: support compression, reference cost, quadratic
@@ -24,8 +25,20 @@ Scientific entrypoints:
 - verification/README.md: commands, analytical versus numerical evidence.
 - verification/run_all.py: deterministic finite verification runner.
 
+Learning entrypoints:
+- learning/MILESTONES.md: the canonical shared understanding map, exactly
+  M01-M30, with 10 background/preliminaries and 20 narrative/innovation
+  milestones; central questions, targets, dependencies, connections and sources.
+- learning/ANCHOR_AND_BRIDGE.md: the single selected educational anchor,
+  John Watrous's The Theory of Quantum Information (2018); targeted readings,
+  notation and assumption translation, and the route from channel and
+  information theory to QET's local energetic response.
+
 Reader routes:
 - For the physical argument: model, energy_information, interpretation.
+- For self-directed study: use the Watrous bridge alongside M01-M30; the map
+  follows the project's scientific dependencies and is independent of any
+  particular reader's background or study history.
 - For the general converse: model and the complete energy_information proof.
 - For criticality: local_stiffness, including the full complex operator space.
 - For spatial decay: correlation_bounds and its uniformity assumptions.
@@ -56,3 +69,10 @@ Preserve the following distinctions:
   originality.
 - Finite numerical agreement is not proof of the universal or asymptotic claim,
   and it is not external peer review.
+- Watrous is the single educational anchor. Primary research sources remain
+  necessary for attribution and imported results; they are not extra assigned
+  textbooks. The bridge identifies the energy-accounting and response steps
+  supplied by the project. Introductory explanations and milestone targets
+  do not replace the canonical scientific proofs.
+- Watrous uses base-two entropy. This project uses natural logarithms, so
+  entropy and relative entropy in nats equal their values in bits times ln(2).

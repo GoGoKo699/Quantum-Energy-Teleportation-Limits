@@ -25,6 +25,8 @@ $$
 
 One can use any established upper bound $f(A,C)$; it need not be the smallest possible one. The norms in (1) are operator norms. Both operator classes include all bounded Hermitian operators supported on the stated regions. A bound proved for selected spin components alone does not meet this hypothesis.
 
+Write $\mathcal C(A:C)$ for the supremum of the absolute connected expectation on the left of (1) over Hermitian $X$ and $Y$ with $\Vert X\Vert\leq1$ and $\Vert Y\Vert\leq1$. Equivalently, $\mathcal C(A:C)$ is the least admissible value of $f(A,C)$ in (1). This is the connected-correlation quantity used in the information account and sharpness examples.
+
 Let $h_B=\inf_{a\in\mathbb R}\Vert H_B-aI\Vert$ be the centered local norm, or any larger certified upper bound on it. Let $\kappa_B>0$ be a valid all-operator local stiffness as defined in [local_stiffness.md](local_stiffness.md). The main theorem gives
 
 $$
