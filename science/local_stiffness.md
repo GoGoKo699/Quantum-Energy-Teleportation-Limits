@@ -27,7 +27,7 @@ respectively. The local excitation stiffness is
 
 $$
 \boxed{\displaystyle
-\kappa_B=\inf_{O:\,G_B(O,O)>0}
+\kappa_B=\inf_{O:\,G_B(O,O)\gt 0}
 \frac{K_B(O,O)}{G_B(O,O)}.}
 \qquad\text{(1)}
 $$
@@ -47,11 +47,11 @@ OP_B=\langle O\rangle P_B.
 \qquad\text{(2)}
 $$
 
-Every such direction is also in the kernel of $K_B$. Thus $K_B$ descends to the quotient by $\ker G_B$. Only these zero-variance directions are removed. A direction with $G_B(O,O)>0$ and $K_B(O,O)=0$ remains in the quotient and makes $\kappa_B=0$. This can happen when a local operator takes the reference state into a different ground state.
+Every such direction is also in the kernel of $K_B$. Thus $K_B$ descends to the quotient by $\ker G_B$. Only these zero-variance directions are removed. A direction with $G_B(O,O)\gt 0$ and $K_B(O,O)=0$ remains in the quotient and makes $\kappa_B=0$. This can happen when a local operator takes the reference state into a different ground state.
 
 Rank deficiency of $\omega_B$ does not justify restricting the output of $O$ to $P_B$. Operators taking $P_B$ into $P_B^\perp$ can have positive variance and excitation energy, and they are included in (1). Equation (2) removes operators that are scalar on the occupied input support, including operators that annihilate that support.
 
-For a unique ground state with gap $\Delta>0$,
+For a unique ground state with gap $\Delta\gt 0$,
 
 $$
 \widetilde H\geq\Delta(I-|\Omega\rangle\langle\Omega|)
@@ -64,7 +64,7 @@ A positive $\kappa_B$ can also hold without a unique global ground state. Its de
 
 ### Generalized eigenvalue computation
 
-Choose any spanning local operator basis $\{F_i\}$, with complex coefficients allowed. Set
+Choose any spanning local operator basis $\lbrace F_i\rbrace $, with complex coefficients allowed. Set
 
 $$
 G_{ij}=G_B(F_i,F_j),\qquad K_{ij}=K_B(F_i,F_j).
@@ -133,7 +133,7 @@ Consider every integer $N\geq4$, including odd $N$, with periodic boundary condi
 $$
 H_N(h)=-J\sum_{j=0}^{N-1}X_jX_{j+1}
 -h\sum_{j=0}^{N-1}Z_j,
-\qquad X_N=X_0,\qquad J,h>0.
+\qquad X_N=X_0,\qquad J,h\gt 0.
 \qquad\text{(8)}
 $$
 
@@ -148,7 +148,7 @@ The spin parity $\mathcal P=\prod_jZ_j$ commutes with $H_N$ and permutes each $X
 Define Jordan–Wigner fermions by
 
 $$
-c_j=\left(\prod_{\ell<j}Z_\ell\right)\frac{X_j+iY_j}{2},
+c_j=\left(\prod_{\ell\lt j}Z_\ell\right)\frac{X_j+iY_j}{2},
 \qquad n_j=c_j^\dagger c_j=\frac{I-Z_j}{2}.
 $$
 
@@ -162,7 +162,7 @@ $$
 Thus the even-parity sector has antiperiodic momenta
 
 $$
-\mathcal K_+=\left\{\frac{(2n+1)\pi}{N}:n=0,\ldots,N-1\right\},
+\mathcal K_+=\left\lbrace \frac{(2n+1)\pi}{N}:n=0,\ldots,N-1\right\rbrace ,
 \qquad
 \epsilon_k(h)=2\sqrt{J^2+h^2-2Jh\cos k}.
 \qquad\text{(9)}
@@ -272,9 +272,9 @@ The local stiffness is their minimum, $\kappa_N=\kappa_-(m_N)$. Its limit is
 
 $$
 \boxed{\displaystyle
-\kappa_*=
+\kappa_{\ast}=
 \frac{2J\left[2/\pi-\sqrt{1-12/\pi^2+48/\pi^4}\right]}{1-4/\pi^2}
-=0.37125191\ldots\,J>0.}
+=0.37125191\ldots\,J\gt 0.}
 \qquad\text{(18)}
 $$
 
@@ -290,44 +290,44 @@ Their minimum ratio is $2Jm_N$, attained for $\boldsymbol n$ along $x$. The chan
 
 ### A uniform bound for every $N\geq4$
 
-Since $x/\sin x$ increases for $0<x<\pi/2$,
+Since $x/\sin x$ increases for $0\lt x\lt \pi/2$,
 
 $$
-m_0<m_N\leq m_4=\frac{1}{4\sin(\pi/8)}<1.
+m_0\lt m_N\leq m_4=\frac{1}{4\sin(\pi/8)}\lt 1.
 \qquad\text{(19)}
 $$
 
-Set $\eta=\kappa_*/J$. At $m=m_0$, the determinant of the $xy$ block of $K/J-\eta G$ is zero. At general $m$ that determinant is
+Set $\eta=\kappa_{\ast}/J$. At $m=m_0$, the determinant of the $xy$ block of $K/J-\eta G$ is zero. At general $m$ that determinant is
 
 $$
 F(m,\eta)=(12-\eta^2)m^2-4\eta m+\eta^2-4.
 \qquad\text{(20)}
 $$
 
-One has $0<\eta<2m_0<2$. Positivity follows from
+One has $0\lt \eta\lt 2m_0\lt 2$. Positivity follows from
 
 $$
 m_0^2-(1-3m_0^2+3m_0^4)
-=(1-m_0^2)(3m_0^2-1)>0;
+=(1-m_0^2)(3m_0^2-1)\gt 0;
 $$
 
 the upper bound follows from
 
 $$
-1-3m_0^2+3m_0^4-m_0^6=(1-m_0^2)^3>0.
+1-3m_0^2+3m_0^4-m_0^6=(1-m_0^2)^3\gt 0.
 $$
 
 For $m\geq m_0$,
 
 $$
 \partial_mF=2(12-\eta^2)m-4\eta
->16m_0-8m_0>0.
+\gt 16m_0-8m_0\gt 0.
 $$
 
-The leading diagonal entry $2m-\eta$ is positive, and the $z$ entry $4m-\eta(1-m^2)$ is positive. Thus $K_N-\kappa_*G_N\geq0$ for every $N\geq4$, proving the uniform bound
+The leading diagonal entry $2m-\eta$ is positive, and the $z$ entry $4m-\eta(1-m^2)$ is positive. Thus $K_N-\kappa_{\ast}G_N\geq0$ for every $N\geq4$, proving the uniform bound
 
 $$
-\kappa_N\geq\kappa_*>0.
+\kappa_N\geq\kappa_{\ast}\gt 0.
 \qquad\text{(21)}
 $$
 
@@ -337,7 +337,7 @@ The energy Bob can change is
 
 $$
 H_B=-JZ_b-JX_b(X_{b-1}+X_{b+1}),
-\qquad C=\{b-1,b,b+1\}.
+\qquad C=\lbrace b-1,b,b+1\rbrace .
 $$
 
 The two neighbors are distinct for $N\geq4$. Their $X$ operators commute, and the two Pauli components on $b$ anticommute. The spectrum of $H_B$ is symmetric about zero. Therefore
@@ -352,7 +352,7 @@ Also $\omega_B=(I+m_NZ_b)/2$, so
 
 $$
 \lambda_{B,N}=\frac{1-m_N}{2}
-\geq\frac{1-m_4}{2}>0,
+\geq\frac{1-m_4}{2}\gt 0,
 \qquad
 \lambda_{B,N}\longrightarrow\frac{1-2/\pi}{2}=0.18169011\ldots.
 \qquad\text{(23)}
@@ -361,8 +361,8 @@ $$
 Equations (21)–(23) make the coefficient in (7) uniformly finite across all rings. Its exact limiting value is
 
 $$
-\frac{2h_B^2}{\kappa_*\lambda_{B,\infty}}
-=\frac{10J^2}{\kappa_*[(1-2/\pi)/2]}.
+\frac{2h_B^2}{\kappa_{\ast}\lambda_{B,\infty}}
+=\frac{10J^2}{\kappa_{\ast}[(1-2/\pi)/2]}.
 \qquad\text{(24)}
 $$
 
@@ -374,4 +374,4 @@ The result is a uniform sequence of finite-volume inequalities. For fixed finite
 
 This calculation establishes the local coefficient. A consequence for spatial decay additionally requires a correlation envelope for the full operator classes on Alice's region and $C$; see [correlation_bounds.md](correlation_bounds.md). A single spin correlator does not establish that envelope.
 
-The standalone [check_critical_ising.py](../verification/check_critical_ising.py) uses only NumPy. It diagonalizes rings of sizes $4,5,6,8$, including an odd ring to check the parity boundary condition. It compares the ground energy, exact gap, parity, local reduced spectrum, local matrices, and generalized eigenvalues with the formulas above. It also checks the three-site norm in (22) and the uniform matrix inequality (21). The script prints one JSON object and exits nonzero on a failed check. Its output is a normalization and boundary-condition check; the all-$N$ claims follow from the analytic derivation.
+The standalone [check_critical_ising.py](../verification/check_critical_ising.py) uses only NumPy. It diagonalizes rings of sizes $4,5,6,8$, including an odd ring to check the parity boundary condition. It compares the ground energy, exact gap, parity, local reduced spectrum, local matrices, and generalized eigenvalues with the formulas above. It also checks the three-site norm in (22) and the uniform matrix inequality (21). The script prints one JSON object and exits nonzero on a failed check. Its output is a normalization and boundary-condition check; the claims for every $N$ follow from the analytic derivation.

@@ -25,7 +25,9 @@ $$
 
 One can use any established upper bound $f(A,C)$; it need not be the smallest possible one. The norms in (1) are operator norms. Both operator classes include all bounded Hermitian operators supported on the stated regions. A bound proved for selected spin components alone does not meet this hypothesis.
 
-Let $h_B=\inf_{a\in\mathbb R}\Vert H_B-aI\Vert$ be the centered local norm, or any larger certified upper bound on it. Let $\kappa_B>0$ be a valid all-operator local stiffness as defined in [local_stiffness.md](local_stiffness.md). The main theorem gives
+Write $\mathcal C(A:C)$ for the supremum of the absolute connected expectation on the left of (1) over Hermitian $X$ and $Y$ with $\Vert X\Vert\leq1$ and $\Vert Y\Vert\leq1$. Equivalently, $\mathcal C(A:C)$ is the least admissible value of $f(A,C)$ in (1). This is the connected-correlation quantity used in the information account and sharpness examples.
+
+Let $h_B=\inf_{a\in\mathbb R}\Vert H_B-aI\Vert$ be the centered local norm, or any larger certified upper bound on it. Let $\kappa_B\gt 0$ be a valid all-operator local stiffness as defined in [local_stiffness.md](local_stiffness.md). The main theorem gives
 
 $$
 E_{\rm ext}\leq\frac{h_B^2}{\kappa_B\lambda_B}
@@ -99,7 +101,7 @@ Averaging the preceding estimate before replacing the effect norm gives a strong
 $$
 \begin{aligned}
 \sum_m p_m\Vert\sigma_m-\omega_C\Vert_1^2
-&\leq f(A,C)^2\sum_{m:p_m>0}
+&\leq f(A,C)^2\sum_{m:p_m\gt 0}
 \frac{\Vert\widetilde E_m\Vert^2}{p_m}\\
 &\leq\frac{f(A,C)^2}{\lambda_A}\sum_m\Vert\widetilde E_m\Vert\\
 &\leq\frac{f(A,C)^2}{\lambda_A}\sum_m\mathrm{Tr}\widetilde E_m
@@ -120,7 +122,7 @@ $$
 
 The number of outcomes and their individual probabilities do not appear. Positivity of the effects supplies the normalization without an outcome-probability floor. Since $r_A\lambda_A\leq1$, equation (7) is at least as strong as the coefficient $1/\lambda_A^2$ obtained by squaring (5) separately on every branch. The elementary bound $\Vert\sigma_m-\omega_C\Vert_1\leq2$ can also be combined with (6) if a bound at small separations is desired.
 
-The theorem requires conditioning on Alice's occupied support. A fixed finite region has $\lambda_A>0$ in each finite system, but this alone does not provide a uniform lower bound across a family of states. The same qualification applies to $\lambda_B$ and $\kappa_B$.
+The theorem requires conditioning on Alice's occupied support. A fixed finite region has $\lambda_A\gt 0$ in each finite system, but this alone does not provide a uniform lower bound across a family of states. The same qualification applies to $\lambda_B$ and $\kappa_B$.
 
 ## 4. Exponential clustering in a gapped spin system
 

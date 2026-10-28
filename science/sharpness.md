@@ -27,10 +27,10 @@ $$
 \qquad\text{(S1)}
 $$
 
-For $C>0$, the minimizing angle may be chosen as
+For $C\gt 0$, the minimizing angle may be chosen as
 
 $$
-\theta_*=-\frac12\mathrm{atan2}(D,C),
+\theta_{\ast}=-\frac12\mathrm{atan2}(D,C),
 $$
 
 and the extracted energy is
@@ -56,7 +56,7 @@ n=|1\rangle\langle1|,\qquad
 \sigma^-=|0\rangle\langle1|,
 $$
 
-and choose $J>0$, $\mu=J/\sqrt2$. The physical Hamiltonian is
+and choose $J\gt 0$, $\mu=J/\sqrt2$. The physical Hamiltonian is
 
 $$
 H_{\mathrm{phys}}
@@ -86,11 +86,11 @@ The theorem uses $H=H_{\mathrm{phys}}-E_0I$, which has the same energy changes. 
 
 $$
 H_B=\mu n_B-J(\sigma_R^+\sigma_B^-+\sigma_R^-\sigma_B^+),
-\qquad C=\{R,B\}.
+\qquad C=\lbrace R,B\rbrace .
 $$
 
 Its four eigenvalues are
-$\{0,\mu,-\mu,2\mu\}$, giving the centered norm
+$\lbrace 0,\mu,-\mu,2\mu\rbrace $, giving the centered norm
 
 $$
 h_B=\frac{3J}{2\sqrt2}.
@@ -145,7 +145,7 @@ E_{\mathrm{ext}}(t)
 \qquad\text{(S7)}
 $$
 
-The corresponding angle is $\theta_*=-\tfrac12\arctan(t/3)$. All outcome probabilities are included in (S7).
+The corresponding angle is $\theta_{\ast}=-\tfrac12\arctan(t/3)$. All outcome probabilities are included in (S7).
 
 ### Record information
 
@@ -197,7 +197,7 @@ Combining (S7) and (S9),
 $$
 \boxed{
 \lim_{t\to0}\frac{E_{\mathrm{ext}}(t)}{I(M:C)}
-=\frac{J}{9\sqrt2\ln3}>0.
+=\frac{J}{9\sqrt2\ln3}\gt 0.
 }
 \qquad\text{(S10)}
 $$
@@ -208,7 +208,7 @@ The theorem supplies the matching $O(I(M:C))$ upper bound for arbitrary feedback
 
 ### Weakly joining two dimers
 
-Take four qubits $0,1,2,3$, with Alice $A=\{0\}$, Bob $B=\{3\}$, and energy neighborhood $C=\{2,3\}$. In fixed energy units, let
+Take four qubits $0,1,2,3$, with Alice $A=\lbrace 0\rbrace $, Bob $B=\lbrace 3\rbrace $, and energy neighborhood $C=\lbrace 2,3\rbrace $. In fixed energy units, let
 
 $$
 H_{\mathrm{phys}}(t)
@@ -239,7 +239,7 @@ $$
 The marginals on sites $0$ and $3$ have
 
 $$
-\lambda_A(0)=\lambda_B(0)=\frac{1-2/r}{2}>0.
+\lambda_A(0)=\lambda_B(0)=\frac{1-2/r}{2}\gt 0.
 \qquad\text{(S13)}
 $$
 

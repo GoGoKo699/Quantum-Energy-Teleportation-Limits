@@ -55,7 +55,7 @@ $$
 =\langle O^\dagger O\rangle-|\langle O\rangle|^2.
 $$
 
-Assume there is a constant $\kappa_B>0$ such that
+Assume there is a constant $\kappa_B\gt 0$ such that
 
 $$
 \boxed{
@@ -70,14 +70,14 @@ The largest valid constant is
 
 $$
 \kappa_B^{\mathrm{opt}}
-=\inf_{\mathrm{Var}_{\omega}(O)>0}
+=\inf_{\mathrm{Var}_{\omega}(O)\gt 0}
 \frac{\langle O^\dagger H O\rangle}
 {\mathrm{Var}_{\omega}(O)}.
 $$
 
 A smaller positive lower bound is sufficient. A condition quantified only over unitary operators would suffice for a unitary-only version of the theorem, but it does not by itself establish the result for arbitrary channels. The all-operator quantifier in (M1) permits the inequality to be summed over Kraus operators.
 
-The stiffness is a finite-dimensional generalized eigenvalue problem. For any basis $\{F_\alpha\}$ of all operators on $B$, form
+The stiffness is a finite-dimensional generalized eigenvalue problem. For any basis $\lbrace F_\alpha\rbrace$ of all operators on $B$, form
 
 $$
 \mathsf A_{\alpha\beta}
@@ -100,7 +100,7 @@ $$
 
 Consequently, the matrices can be evaluated from operators supported on $C$, even though the stiffness is defined through the total Hamiltonian.
 
-If the ground state is unique and the excitation gap is $\Delta>0$, then
+If the ground state is unique and the excitation gap is $\Delta\gt 0$, then
 
 $$
 H\ge\Delta(I-\omega)
@@ -120,7 +120,7 @@ E_m=\sum_\alpha M_{m\alpha}^\dagger M_{m\alpha},
 \qquad E_m\ge0,\qquad\sum_m E_m=I_A.
 $$
 
-For $p_m=\langle E_m\rangle>0$, define
+For $p_m=\langle E_m\rangle\gt 0$, define
 
 $$
 \rho_m=
@@ -164,8 +164,8 @@ $$
 The total system energy change caused by this feedback is localized:
 
 $$
-\mathcal E_m^*(H)-H
-=\mathcal E_m^*(H_B)-H_B.
+\mathcal E_m^{\ast}(H)-H
+=\mathcal E_m^{\ast}(H_B)-H_B.
 \qquad\text{(M3)}
 $$
 
@@ -192,7 +192,7 @@ Let
 $$
 P_B=\mathrm{supp}(\omega_B),
 \qquad
-\lambda_B=\lambda_{\min}^{+}(\omega_B)>0.
+\lambda_B=\lambda_{\min}^{+}(\omega_B)\gt 0.
 $$
 
 Full rank is not assumed. The theorem explicitly tracks the smallest positive eigenvalue because the cost-to-response estimate converts a state-weighted norm into an operator norm on the occupied support. Conditional states remain on that support before Bob acts, while Bob's channel may map them outside it.

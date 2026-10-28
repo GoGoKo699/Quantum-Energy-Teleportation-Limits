@@ -8,7 +8,7 @@ This project establishes a quadratic response bound for arbitrary local measurem
 
 The system starts in a pure ground state. Alice measures region $A$, records an outcome $M$, and sends it to Bob, who acts on $B$. No Hamiltonian evolution occurs between these operations. Let $C$ include $B$ and every interaction term Bob can change; Alice's region is disjoint from $C$.
 
-Write $H_B$ for those energy terms, $h_B=\inf_c\lVert H_B-cI\rVert$ for their centered norm, and $\lambda_B$ for the smallest positive eigenvalue of Bob's ground-state marginal. The local stiffness $\kappa_B>0$ lower-bounds the energy cost per variance of **every local operator**, including non-Hermitian operators. The [model](science/model.md) gives the exact definition.
+Write $H_B$ for those energy terms, $h_B=\inf_c\lVert H_B-cI\rVert$ for their centered norm, and $\lambda_B$ for the smallest positive eigenvalue of Bob's ground-state marginal. The local stiffness $\kappa_B\gt 0$ lower-bounds the energy cost per variance of **every local operator**, including non-Hermitian operators. The [model](science/model.md) gives the exact definition.
 
 The average decrease of total system energy during Bob's feedback obeys
 
@@ -48,6 +48,14 @@ The curves use the exact finite-ring formulas in [Local excitation stiffness](sc
 Start with the [operational model and result map](science/model.md), then follow the [general proof](science/energy_information.md). The [local-stiffness calculation](science/local_stiffness.md) explains why a bulk gap can be replaced by a local energy scale. The [correlation bound](science/correlation_bounds.md) and [attaining examples](science/sharpness.md) give the corresponding physical consequences.
 
 The [interpretation](science/interpretation.md) connects the results, the energy ledger and the assumptions. [Related work](references/RELATED_WORK.md) compares actual statements and operational models; the [bibliography](references/references.bib) supplies the primary sources.
+
+## Learn the project
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](learning/ANCHOR_AND_BRIDGE.md) identifies the relevant parts of the author's available text, translates the notation and entropy conventions, and connects its channel and information tools to the energy bound developed here.
+
+The [30-milestone map](learning/MILESTONES.md) gives a common understanding route through the project. Its **10 background/preliminaries milestones** assemble states, operations, local energy, distinguishability and information into the QET setting. Its **20 narrative/innovation milestones** follow the balance between cost and response through the information ceiling, spatial consequence, critical-chain certificate, sharpness examples and physical interpretation.
+
+Each milestone has a central question, an understanding target, dependencies, a conceptual connection and source pointers. Use the bridge alongside the map for self-directed study. The [reading guide](llms.txt) routes scientific and learning questions to their authoritative files; the direct proof route above remains available for specialist reading.
 
 ## Reproduce the finite checks
 
