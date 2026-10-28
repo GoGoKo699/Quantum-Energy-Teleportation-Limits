@@ -6,7 +6,7 @@ The model, energy accounting, and all-operator stiffness hypothesis are specifie
 
 ## Theorem 1: conditional distinguishability and information
 
-Assume the model hypotheses and a constant $\kappa_B>0$ satisfying
+Assume the model hypotheses and a constant $\kappa_B\gt 0$ satisfying
 
 $$
 \langle O^\dagger H O\rangle
@@ -30,7 +30,7 @@ E_{\mathrm{ext}}
 \qquad\text{(2)}
 $$
 
-The coefficient does not depend on the number of outcomes, a minimum outcome probability, or the Kraus rank of the feedback. Neither $\omega_A$ nor $\omega_B$ is required to be full rank. With a unique ground state and gap $\Delta>0$, the same statement holds with $\kappa_B$ replaced by $\Delta$.
+The coefficient does not depend on the number of outcomes, a minimum outcome probability, or the Kraus rank of the feedback. Neither $\omega_A$ nor $\omega_B$ is required to be full rank. With a unique ground state and gap $\Delta\gt 0$, the same statement holds with $\kappa_B$ replaced by $\Delta$.
 
 The proof establishes a bound for each branch before averaging. A branch may have negative extraction, and no conditioning on successful outcomes is implicit in (2).
 
@@ -43,7 +43,7 @@ $\sum_m p_m(\sigma_m)_B=\omega_B$ imply
 
 $$
 \mathrm{Tr}[(I_B-P)(\sigma_m)_B]=0
-\quad\text{for every }p_m>0.
+\quad\text{for every }p_m\gt 0.
 $$
 
 For a positive matrix, zero trace against a projection means that its range is orthogonal to that projection. Therefore
@@ -139,7 +139,7 @@ The purpose of $L$ is an expectation identity, not an operator identity with the
 
 $$
 \langle XL\rangle
-=\left\langle X\left(\mathcal E^*(H)-H\right)\right\rangle.
+=\left\langle X\left(\mathcal E^{\ast}(H)-H\right)\right\rangle.
 \qquad\text{(10)}
 $$
 
@@ -166,7 +166,7 @@ Taking $X=I$ gives $\mathrm{Tr}(\omega_CL)=Q$. Taking $X=E_m$, using the conditi
 
 $$
 \mathrm{Tr}(\sigma_mL)
-=\mathrm{Tr}\left[\rho_m\left(\mathcal E^*(H)-H\right)\right].
+=\mathrm{Tr}\left[\rho_m\left(\mathcal E^{\ast}(H)-H\right)\right].
 \qquad\text{(11)}
 $$
 
@@ -187,7 +187,7 @@ g_m
 \qquad\text{(12)}
 $$
 
-The last line maximizes a concave quadratic over $q\ge0$. Allowing $q>1$ only enlarges the upper bound. If $q=0$, then $W=0$, and the same identity shows that the channel produces no conditioned energy change. Thus zero-cost directions associated with an unoccupied local subspace do not create a linear-response loophole.
+The last line maximizes a concave quadratic over $q\ge0$. Allowing $q\gt 1$ only enlarges the upper bound. If $q=0$, then $W=0$, and the same identity shows that the channel produces no conditioned energy change. Thus zero-cost directions associated with an unoccupied local subspace do not create a linear-response loophole.
 
 Averaging (12) proves the first inequality in (2). Quantum Pinsker's inequality, with natural logarithms, states
 

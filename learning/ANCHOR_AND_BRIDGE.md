@@ -34,7 +34,7 @@ Research papers supporting passivity, QET comparisons, the exact Ising solution,
 | $\rho[X]$, the state reduced to register $X$ | $\omega_B$ for the ground-state marginal, or $\sigma_m$ for the conditional state on $C$. |
 | $\Phi$, a channel | $\mathcal E_m$, Bob's feedback channel after outcome $m$. |
 | $A_a$ in a Kraus representation, and $A$ for an isometry | $K_j$ and $V$, respectively. The letter $A$ already names Alice's region here. |
-| $X^*$ for an operator adjoint | $X^\dagger$. The notation $\mathcal E_m^*$ still denotes the adjoint **map**. |
+| $X^{\ast}$ for an operator adjoint | $X^\dagger$. The notation $\mathcal E_m^{\ast}$ still denotes the adjoint **map**. |
 | $\mu(m)$, a positive measurement effect | $E_m$. The implementation can have several Kraus operators $M_{m\alpha}$ for one recorded outcome. |
 | $H(\rho)$, an entropy | $S(\rho)$ when entropy is written explicitly below. The symbol $H$ denotes the physical Hamiltonian in the project. |
 | Base-two logarithms in entropies | Natural logarithms, so information is measured in nats. |
@@ -54,7 +54,7 @@ E_m=\sum_\alpha M_{m\alpha}^\dagger M_{m\alpha},
 \qquad \sum_m E_m=I_A.
 $$
 
-The probability of outcome $m$ is $p_m=\langle E_m\rangle$. For $p_m>0$, let $\sigma_m$ be the state on $C$ conditional on that outcome. Since Alice acts outside $C$, any observable $Y_C$ satisfies
+The probability of outcome $m$ is $p_m=\langle E_m\rangle$. For $p_m\gt 0$, let $\sigma_m$ be the state on $C$ conditional on that outcome. Since Alice acts outside $C$, any observable $Y_C$ satisfies
 
 $$
 p_m\mathrm{Tr}(\sigma_mY_C)=\langle E_mY_C\rangle,
@@ -72,7 +72,7 @@ $$
 
 The orthogonal states $\lvert m\rangle$ represent an ordinary classical record. Define $\delta_m=\sigma_m-\omega_C$ and $d_m=\lVert\delta_m\rVert_1$. If all $d_m$ vanish, the outcome gives no information about any observable on $C$.
 
-The positivity of the conditional states also controls their support. A vector in the kernel of $\omega_C=\sum_m p_m\sigma_m$ has zero expectation against every positive term with $p_m>0$. It is therefore in the kernel of every such $\sigma_m$. Consequently $D(\sigma_m\Vert\omega_C)$ is finite even when $\omega_C$ has zero eigenvalues. The same reasoning on $B$ establishes the support statement used in [M11](MILESTONES.md#m11).
+The positivity of the conditional states also controls their support. A vector in the kernel of $\omega_C=\sum_m p_m\sigma_m$ has zero expectation against every positive term with $p_m\gt 0$. It is therefore in the kernel of every such $\sigma_m$. Consequently $D(\sigma_m\Vert\omega_C)$ is finite even when $\omega_C$ has zero eigenvalues. The same reasoning on $B$ establishes the support statement used in [M11](MILESTONES.md#m11).
 
 Theorem 3.4 of [Chapter 3](https://jhwatrous.github.io/TQI.3.pdf) makes the trace norm operational: for two density matrices given with equal prior probabilities, the optimal probability of identifying them is
 
@@ -124,7 +124,7 @@ Q=\sum_j\langle K_j^\dagger HK_j\rangle
 \ge\kappa_Bq^2.
 $$
 
-Here $Q$ is the energy increase produced by that channel on the unconditioned ground state. A unique ground state with gap $\Delta>0$ guarantees the hypothesis with $\kappa_B=\Delta$. The [local-stiffness calculation](../science/local_stiffness.md) can give a stronger constant; it removes only zero-variance directions and keeps all other local operators. These are the connections developed in [M06](MILESTONES.md#m06), [M12](MILESTONES.md#m12), and [M20](MILESTONES.md#m20).
+Here $Q$ is the energy increase produced by that channel on the unconditioned ground state. A unique ground state with gap $\Delta\gt 0$ guarantees the hypothesis with $\kappa_B=\Delta$. The [local-stiffness calculation](../science/local_stiffness.md) can give a stronger constant; it removes only zero-variance directions and keeps all other local operators. These are the connections developed in [M06](MILESTONES.md#m06), [M12](MILESTONES.md#m12), and [M20](MILESTONES.md#m20).
 
 <a id="information-and-energy"></a>
 
@@ -132,7 +132,7 @@ Here $Q$ is the energy increase produced by that channel on the unconditioned gr
 
 ### Support converts a weighted estimate into a uniform one
 
-Let $P_B$ project onto the support of $\omega_B$, and let $\lambda_B>0$ be its smallest positive eigenvalue. Thus $\omega_B\ge\lambda_BP_B$. Define $\lvert a\rangle=\sum_j a_j\lvert j\rangle$ and
+Let $P_B$ project onto the support of $\omega_B$, and let $\lambda_B\gt 0$ be its smallest positive eigenvalue. Thus $\omega_B\ge\lambda_BP_B$. Define $\lvert a\rangle=\sum_j a_j\lvert j\rangle$ and
 
 $$
 W=(V-I_B\otimes\lvert a\rangle)P_B.
@@ -227,7 +227,7 @@ The information in the actual record can therefore be replaced by the ground-sta
 
 ## 6. A complete three-qubit example
 
-Take qubits $A,R,B$ and standard Pauli operators $X,Y,Z$. Put $n=(I-Z)/2$ and choose $J>0$. The [first exact example](../science/sharpness.md#1-linear-dependence-on-record-information) uses
+Take qubits $A,R,B$ and standard Pauli operators $X,Y,Z$. Put $n=(I-Z)/2$ and choose $J\gt 0$. The [first exact example](../science/sharpness.md#1-linear-dependence-on-record-information) uses
 
 $$
 \begin{aligned}
@@ -249,7 +249,7 @@ E_0&=-J/\sqrt2,
 \end{aligned}
 $$
 
-Alice controls the first qubit, Bob controls the last, and $C=\{R,B\}$. In particular, Alice is outside Bob's energy neighborhood. Bob changes
+Alice controls the first qubit, Bob controls the last, and $C=\lbrace R,B\rbrace $. In particular, Alice is outside Bob's energy neighborhood. Bob changes
 
 $$
 H_B=\frac J{\sqrt2}n_B-\frac J2(X_RX_B+Y_RY_B).
@@ -259,7 +259,7 @@ For a measurement strength $0\le t\le1$, Alice implements the two Kraus operator
 
 $$
 E_s=\frac{I+s tX_A}{2},
-\qquad s\in\{-1,+1\}.
+\qquad s\in\lbrace -1,+1\rbrace .
 $$
 
 Both outcomes have probability $1/2$, and Alice communicates the sign $s$. The support of the marginal on $C$ is spanned by
@@ -299,9 +299,9 @@ $$
 Bob applies the local unitary
 
 $$
-U_s=e^{is\theta_*Y_B},
+U_s=e^{is\theta_{\ast}Y_B},
 \qquad
-\theta_*=-\frac12\arctan(t/3).
+\theta_{\ast}=-\frac12\arctan(t/3).
 $$
 
 The rotation calculation in the exact example gives the same extracted energy in each branch:
@@ -318,7 +318,7 @@ For a concrete choice $t=1/2$, this protocol gives
 | Probability of each communicated sign | $1/2$ |
 | Conditional trace norm $d_s$ | $\sqrt3/4\approx0.433013$ |
 | Record information | $I(M:C)\approx0.107590695$ nats |
-| Feedback angle | $\theta_*\approx-0.082574339$ radians |
+| Feedback angle | $\theta_{\ast}\approx-0.082574339$ radians |
 | Average energy decrease | $E_{\mathrm{ext}}/J\approx0.0073152433$ |
 
 The theorem applies with $\kappa_B=\Delta=J/\sqrt2$, $\lambda_B=1/4$, and the centered norm $h_B=3J/(2\sqrt2)$. It gives $E_{\mathrm{ext}}\le9\sqrt2\,J I(M:C)$, which is about $1.36941J$ at this measurement strength. The explicit protocol lies below that general bound; the theorem's coefficient need not be optimal for this particular Hamiltonian.

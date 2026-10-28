@@ -8,7 +8,7 @@ This project establishes a quadratic response bound for arbitrary local measurem
 
 The system starts in a pure ground state. Alice measures region $A$, records an outcome $M$, and sends it to Bob, who acts on $B$. No Hamiltonian evolution occurs between these operations. Let $C$ include $B$ and every interaction term Bob can change; Alice's region is disjoint from $C$.
 
-Write $H_B$ for those energy terms, $h_B=\inf_c\lVert H_B-cI\rVert$ for their centered norm, and $\lambda_B$ for the smallest positive eigenvalue of Bob's ground-state marginal. The local stiffness $\kappa_B>0$ lower-bounds the energy cost per variance of **every local operator**, including non-Hermitian operators. The [model](science/model.md) gives the exact definition.
+Write $H_B$ for those energy terms, $h_B=\inf_c\lVert H_B-cI\rVert$ for their centered norm, and $\lambda_B$ for the smallest positive eigenvalue of Bob's ground-state marginal. The local stiffness $\kappa_B\gt 0$ lower-bounds the energy cost per variance of **every local operator**, including non-Hermitian operators. The [model](science/model.md) gives the exact definition.
 
 The average decrease of total system energy during Bob's feedback obeys
 

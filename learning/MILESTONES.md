@@ -266,7 +266,7 @@ This phase builds the local response estimate into the universal energy ceiling.
 ### M22. Positive local stiffness with a closing bulk gap
 
 - **Central question:** Can a receiver retain a finite energetic resistance when the many-body excitation gap tends to zero?
-- **Understanding target:** Connect the Ising local matrices to $\kappa_N\geq\kappa_*>0$, with $\kappa_*/J\simeq0.37125191$, and track the uniform marginal eigenvalue and centered local norm. Explain why the information coefficient remains finite and why this alone supplies no exact critical spatial decay exponent.
+- **Understanding target:** Connect the Ising local matrices to $\kappa_N\geq\kappa_{\ast}\gt 0$, with $\kappa_{\ast}/J\simeq0.37125191$, and track the uniform marginal eigenvalue and centered local norm. Explain why the information coefficient remains finite and why this alone supplies no exact critical spatial decay exponent.
 - **Dependencies and story role:** Depends on [M16](#m16), [M19](#m19), [M20](#m20), and [M21](#m21). It establishes that the universal ceiling is controlled by local stiffness rather than necessarily by a global gap.
 - **Conceptual connection:** Delocalized low-energy excitations and energy created by an operation confined to one site answer different physical questions.
 - **Source pointers:** [Local stiffness: Exact all-operator stiffness](../science/local_stiffness.md#exact-all-operator-stiffness), [Local norm and support conditioning](../science/local_stiffness.md#local-norm-and-support-conditioning), and [Thermodynamic scope](../science/local_stiffness.md#4-thermodynamic-scope-and-verification); [Interpretation: Local stiffness and the bulk gap](../science/interpretation.md#local-stiffness-and-the-bulk-gap-answer-different-questions).
