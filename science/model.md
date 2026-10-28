@@ -77,7 +77,7 @@ $$
 
 A smaller positive lower bound is sufficient. A condition quantified only over unitary operators would suffice for a unitary-only version of the theorem, but it does not by itself establish the result for arbitrary channels. The all-operator quantifier in (M1) permits the inequality to be summed over Kraus operators.
 
-The stiffness is a finite-dimensional generalized eigenvalue problem. For any basis $\lbrace F_\alpha\rbrace $ of all operators on $B$, form
+The stiffness is a finite-dimensional generalized eigenvalue problem. For any basis $\lbrace F_\alpha\rbrace$ of all operators on $B$, form
 
 $$
 \mathsf A_{\alpha\beta}
