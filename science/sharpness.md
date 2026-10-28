@@ -15,22 +15,22 @@ $$
 If the conditional states satisfy
 
 $$
-\operatorname{Tr}\!\left[\sigma_s(Y_BH_BY_B-H_B)\right]=C,
+\mathrm{Tr}\left[\sigma_s(Y_BH_BY_B-H_B)\right]=C,
 \qquad
-i\operatorname{Tr}\!\left[\sigma_s[H_B,Y_B]\right]=sD,
+i\mathrm{Tr}\left[\sigma_s[H_B,Y_B]\right]=sD,
 $$
 
 then the conditional increase in energy is independent of the outcome:
 
 $$
 \Delta E_s(\theta)=C\sin^2\theta+D\sin\theta\cos\theta.
-\tag{S1}
+\qquad\text{(S1)}
 $$
 
 For $C>0$, the minimizing angle may be chosen as
 
 $$
-\theta_*=-\frac12\operatorname{atan2}(D,C),
+\theta_*=-\frac12\mathrm{atan2}(D,C),
 $$
 
 and the extracted energy is
@@ -39,7 +39,7 @@ $$
 E_{\mathrm{rot}}
 =\frac{\sqrt{C^2+D^2}-C}{2}
 =\frac{D^2}{2(\sqrt{C^2+D^2}+C)}.
-\tag{S2}
+\qquad\text{(S2)}
 $$
 
 The second expression avoids cancellation when the signal $D$ is small. Equation (S2) optimizes this one-parameter rotation family. Neither sharpness claim requires it to be the globally optimal local feedback map, because an achieved gain already supplies a lower bound on the optimal extraction.
@@ -65,7 +65,7 @@ H_{\mathrm{phys}}
 \sigma_A^+\sigma_R^-+\sigma_A^-\sigma_R^+
 +\sigma_R^+\sigma_B^-+\sigma_R^-\sigma_B^+
 \right).
-\tag{S3}
+\qquad\text{(S3)}
 $$
 
 The one-excitation sector is the three-site hopping matrix. Its eigenvalues are
@@ -79,7 +79,7 @@ $$
 E_0=-\frac{J}{\sqrt2},
 \qquad
 \Delta=\frac{J}{\sqrt2}.
-\tag{S4}
+\qquad\text{(S4)}
 $$
 
 The theorem uses $H=H_{\mathrm{phys}}-E_0I$, which has the same energy changes. Bob acts only on the last qubit, so
@@ -105,7 +105,7 @@ Alice uses the binary effects
 
 $$
 E_s=\frac{I+s tX_A}{2},\qquad 0\le t\le1.
-\tag{S5}
+\qquad\text{(S5)}
 $$
 
 These can be implemented by the positive Kraus operators $\sqrt{E_s}$. The probabilities are $p_s=1/2$. For an operator on $C$, its conditional expectation equals its expectation against $I+s tX_A$ in the ground state.
@@ -124,7 +124,7 @@ D
 +J\langle X_AX_RZ_B\rangle\right]
 =\frac{Jt}{2\sqrt2}.
 \end{aligned}
-\tag{S6}
+\qquad\text{(S6)}
 $$
 
 The ground-state correlators used here are
@@ -142,7 +142,7 @@ $$
 E_{\mathrm{ext}}(t)
 =\frac{J}{4\sqrt2}\left(\sqrt{9+t^2}-3\right)
 =\frac{J}{24\sqrt2}t^2+O(t^4).
-\tag{S7}
+\qquad\text{(S7)}
 $$
 
 The corresponding angle is $\theta_*=-\tfrac12\arctan(t/3)$. All outcome probabilities are included in (S7).
@@ -172,7 +172,7 @@ $$
 3/4 & s\sqrt3t/4\\
 s\sqrt3t/4 & 1/4
 \end{pmatrix}.
-\tag{S8}
+\qquad\text{(S8)}
 $$
 
 Its nonzero eigenvalues are
@@ -186,10 +186,10 @@ With binary entropy $b(x)=-x\ln x-(1-x)\ln(1-x)$,
 $$
 \begin{aligned}
 I(M:C)
-&=b(3/4)-b\!\left(\frac{1+\sqrt{1/4+3t^2/4}}{2}\right)\\
+&=b(3/4)-b\left(\frac{1+\sqrt{1/4+3t^2/4}}{2}\right)\\
 &=\frac{3\ln3}{8}t^2+O(t^4).
 \end{aligned}
-\tag{S9}
+\qquad\text{(S9)}
 $$
 
 Combining (S7) and (S9),
@@ -199,7 +199,7 @@ $$
 \lim_{t\to0}\frac{E_{\mathrm{ext}}(t)}{I(M:C)}
 =\frac{J}{9\sqrt2\ln3}>0.
 }
-\tag{S10}
+\qquad\text{(S10)}
 $$
 
 The theorem supplies the matching $O(I(M:C))$ upper bound for arbitrary feedback with the same Hamiltonian. Therefore the exponent one in record information is sharp. This example does not make the ground-state mutual information $I(A:C)_\omega$ small: that state is fixed while Alice's measurement becomes weaker.
@@ -213,7 +213,7 @@ Take four qubits $0,1,2,3$, with Alice $A=\{0\}$, Bob $B=\{3\}$, and energy neig
 $$
 H_{\mathrm{phys}}(t)
 =-\sum_{j=0}^3Z_j-X_0X_1-tX_1X_2-X_2X_3.
-\tag{S11}
+\qquad\text{(S11)}
 $$
 
 At $t=0$, this is the sum of two identical dimer Hamiltonians. Put
@@ -233,14 +233,14 @@ energy $-r$, and excitation gap $r-1$. Thus
 $$
 |\Omega(0)\rangle=|g\rangle_{01}|g\rangle_{23},
 \qquad \Delta(0)=r-1.
-\tag{S12}
+\qquad\text{(S12)}
 $$
 
 The marginals on sites $0$ and $3$ have
 
 $$
 \lambda_A(0)=\lambda_B(0)=\frac{1-2/r}{2}>0.
-\tag{S13}
+\qquad\text{(S13)}
 $$
 
 The perturbation has norm $|t|$, so eigenvalue perturbation bounds give
@@ -263,7 +263,7 @@ $\langle\Omega(0)|\Omega'(0)\rangle=0$. Because the perturbation is $-X_1X_2$, t
 $$
 \left(H_{\mathrm{phys}}(0)+2rI\right)|\Omega'(0)\rangle
 =X_1X_2|\Omega(0)\rangle.
-\tag{S14}
+\qquad\text{(S14)}
 $$
 
 The first-order ground energy shift vanishes by dimer parity. The source in (S14) lies in the odd-parity sector of each dimer. In the ordered basis
@@ -280,7 +280,7 @@ $$
 =\frac{9}{16r}I
 +\frac1{16}(X\otimes I+I\otimes X)
 +\frac1{16r}X\otimes X.
-\tag{S15}
+\qquad\text{(S15)}
 $$
 
 Multiplication yields
@@ -291,7 +291,7 @@ $$
 \left(
 \frac18,\frac{4+3r}{40},\frac{-4+3r}{40},\frac18
 \right).
-\tag{S16}
+\qquad\text{(S16)}
 $$
 
 All components outside this four-dimensional sector vanish.
@@ -314,7 +314,7 @@ C(0)=2\langle Z_3+X_2X_3\rangle_0=\frac6r,
 $$
 
 For any fixed Hermitian observable $O$, its derivative is
-$2\operatorname{Re}\langle\Omega'(0)|O|\Omega(0)\rangle$. Using (S16),
+$2\mathrm{Re}\langle\Omega'(0)|O|\Omega(0)\rangle$. Using (S16),
 
 $$
 \left.\frac{d\langle X_0X_3\rangle_t}{dt}\right|_0
@@ -322,7 +322,7 @@ $$
 \qquad
 \left.\frac{d\langle X_0X_2Z_3\rangle_t}{dt}\right|_0
 =\frac7{10r}.
-\tag{S17}
+\qquad\text{(S17)}
 $$
 
 Since
@@ -335,7 +335,7 @@ these derivatives give
 
 $$
 D'(0)=\frac1{5r}.
-\tag{S18}
+\qquad\text{(S18)}
 $$
 
 The opposite commutator convention $i\langle X_0[Y_3,H_B]\rangle$ has derivative $-1/(5r)$; the extracted energy is unaffected by this sign convention.
@@ -348,7 +348,7 @@ E_{\mathrm{ext}}(t)
 =\frac{D'(0)^2}{4C(0)}t^2+o(t^2)
 =\frac{t^2}{600\sqrt5}+o(t^2).
 }
-\tag{S19}
+\qquad\text{(S19)}
 $$
 
 This is an achieved gain from an explicit measurement and a local unitary protocol. It supplies a lower bound on the optimum over all local channels.
@@ -359,7 +359,7 @@ At $t=0$, the ground state factorizes between the two dimers, so
 $\omega_{AC}(0)=\omega_A(0)\otimes\omega_C(0)$. Analyticity in finite dimension implies
 
 $$
-\left\|\omega_{AC}(t)-\omega_A(t)\otimes\omega_C(t)\right\|_1
+\left\Vert\omega_{AC}(t)-\omega_A(t)\otimes\omega_C(t)\right\Vert_1
 =O(|t|).
 $$
 
@@ -378,7 +378,7 @@ $$
 \mathcal C(A:C)=\Theta(|t|),\qquad
 E_{\mathrm{ext}}(t)=\Theta(\mathcal C(A:C)^2).
 }
-\tag{S20}
+\qquad\text{(S20)}
 $$
 
 Together with the uniform converse, (S20) rules out a general upper bound that is of smaller order than the square of connected correlations under the same fixed-parameter conditions. It neither fixes the best prefactor nor substitutes for a family in which distance tends to infinity.

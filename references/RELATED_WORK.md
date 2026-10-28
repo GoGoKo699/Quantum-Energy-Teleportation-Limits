@@ -7,7 +7,7 @@ The result studied here concerns the average decrease of a system's **total inte
 $$
 E_{\mathrm{ext}}
 \leq \frac{h_B^2}{\kappa_B\lambda_B}
-\sum_m p_m\|\sigma_m-\omega_C\|_1^2
+\sum_m p_m\Vert\sigma_m-\omega_C\Vert_1^2
 \leq \frac{2h_B^2}{\kappa_B\lambda_B}I(M:C).
 $$
 
@@ -37,7 +37,7 @@ Section 3 treats arbitrary local measurements and outcome-dependent local unitar
 
 $$
 I(M:C)\geq
-\frac{(E_{\mathrm{ext}}+\overline Q)^2}{2\|H_B\|^2},
+\frac{(E_{\mathrm{ext}}+\overline Q)^2}{2\Vert H_B\Vert^2},
 \qquad
 \overline Q=\sum_m p_m\langle U_m^\dagger H U_m\rangle\geq0.
 $$
@@ -64,7 +64,7 @@ The operation class, passivity principle, and gap/Schmidt conditioning are impor
 
 The paper bounds QET extraction for local POVMs and conditional local unitaries using exponential clustering in a unique, gapped ground state. Its variational decomposition retains a nonpositive ground-state contribution in Eq. (10), then drops that contribution in Eq. (11). Section 4 obtains an energy bound linear in the clustering envelope; Section 5 refines the control of the feedback through commutators.
 
-The present argument instead combines the energetic cost with the size of the useful response. Its squared-envelope consequence has additional explicit hypotheses: fixed supports and uniformly bounded $h_B$, $r_A$, $1/\kappa_B$, $1/\lambda_A$, and $1/\lambda_B$. It also allows CPTP feedback. A supplied estimate $\operatorname{Corr}(A:C)\leq C_0e^{-d/\xi}$ then yields an $e^{-2d/\xi}$ envelope. This does not identify the optimal correlation length or prove that this distance exponent is attained.
+The present argument instead combines the energetic cost with the size of the useful response. Its squared-envelope consequence has additional explicit hypotheses: fixed supports and uniformly bounded $h_B$, $r_A$, $1/\kappa_B$, $1/\lambda_A$, and $1/\lambda_B$. It also allows CPTP feedback. A supplied estimate $\mathrm{Corr}(A:C)\leq C_0e^{-d/\xi}$ then yields an $e^{-2d/\xi}$ envelope. This does not identify the optimal correlation length or prove that this distance exponent is attained.
 
 <a id="itoh2026"></a>
 
@@ -77,7 +77,7 @@ The published Secs. II–III define energy reduction relative to a chosen local 
 $$
 E_{\mathrm{ext}}
 \leq
-\frac{D(\rho_S\|\sigma_{\mathrm{eff}})+I_{\mathrm{QC}}}{\beta_{\mathrm{eff}}}.
+\frac{D(\rho_S\Vert\sigma_{\mathrm{eff}})+I_{\mathrm{QC}}}{\beta_{\mathrm{eff}}}.
 $$
 
 The same formula and equation number occur in the inspected preprint. The state $\sigma_{\mathrm{eff}}$ is Gibbs for $H_S$ at an effective temperature determined from entanglement.
