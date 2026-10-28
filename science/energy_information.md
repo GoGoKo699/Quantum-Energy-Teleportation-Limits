@@ -12,7 +12,7 @@ $$
 \langle O^\dagger H O\rangle
 \ge\kappa_B\left(\langle O^\dagger O\rangle-|\langle O\rangle|^2\right)
 \quad\text{for every local operator }O\text{ on }B.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 For every local instrument on $A$, and every outcome-dependent local CPTP feedback map on $B$,
@@ -22,12 +22,12 @@ $$
 \begin{aligned}
 E_{\mathrm{ext}}
 &\le\frac{h_B^2}{\kappa_B\lambda_B}
-\sum_m p_m\|\sigma_m-\omega_C\|_1^2\\
+\sum_m p_m\Vert\sigma_m-\omega_C\Vert_1^2\\
 &\le\frac{2h_B^2}{\kappa_B\lambda_B}I(M:C)\\
 &\le\frac{2h_B^2}{\kappa_B\lambda_B}I(A:C)_\omega.
 \end{aligned}
 }
-\tag{2}
+\qquad\text{(2)}
 $$
 
 The coefficient does not depend on the number of outcomes, a minimum outcome probability, or the Kraus rank of the feedback. Neither $\omega_A$ nor $\omega_B$ is required to be full rank. With a unique ground state and gap $\Delta>0$, the same statement holds with $\kappa_B$ replaced by $\Delta$.
@@ -42,7 +42,7 @@ Write $P=P_B$, extended by the identity on other regions. Positivity and
 $\sum_m p_m(\sigma_m)_B=\omega_B$ imply
 
 $$
-\operatorname{Tr}[(I_B-P)(\sigma_m)_B]=0
+\mathrm{Tr}[(I_B-P)(\sigma_m)_B]=0
 \quad\text{for every }p_m>0.
 $$
 
@@ -50,7 +50,7 @@ For a positive matrix, zero trace against a projection means that its range is o
 
 $$
 \sigma_m=P\sigma_mP,\qquad \omega_C=P\omega_CP,
-\tag{3}
+\qquad\text{(3)}
 $$
 
 where $P$ now acts on $C$. This is the only support restriction imposed on the pre-feedback conditional states. Bob's operations themselves need not preserve $P$.
@@ -70,7 +70,7 @@ $$
 a_j=\langle K_j\rangle,
 \qquad |a\rangle=\sum_j a_j|j\rangle,
 \qquad q^2=1-\sum_j|a_j|^2.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Cauchy-Schwarz and trace preservation give $0\le q^2\le1$. The energy cost of applying this channel to the ground state is
@@ -80,7 +80,7 @@ Q=\sum_j\langle K_j^\dagger H K_j\rangle
 \ge\kappa_B\sum_j
 \left(\langle K_j^\dagger K_j\rangle-|\langle K_j\rangle|^2\right)
 =\kappa_Bq^2.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 This is where the all-operator hypothesis is needed. It is applied to every Kraus operator, including non-Hermitian operators.
@@ -89,24 +89,24 @@ Define the rectangular local operator
 
 $$
 W=(V-I_B\otimes|a\rangle)P.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Here $I_B\otimes|a\rangle$ maps $|\psi\rangle$ to $|\psi\rangle\otimes|a\rangle$. Since $P|\Omega\rangle=|\Omega\rangle$,
 
 $$
-\operatorname{Tr}(\omega_BW^\dagger W)
-=\|W|\Omega\rangle\|^2=q^2.
+\mathrm{Tr}(\omega_BW^\dagger W)
+=\Vert W|\Omega\rangle\Vert^2=q^2.
 $$
 
 The inequality $\omega_B\ge\lambda_BP$, together with $W=WP$, yields
 
 $$
-q^2\ge\lambda_B\operatorname{Tr}(W^\dagger W)
-\ge\lambda_B\|W\|^2,
+q^2\ge\lambda_B\mathrm{Tr}(W^\dagger W)
+\ge\lambda_B\Vert W\Vert^2,
 \qquad
-\|W\|\le q/\sqrt{\lambda_B}.
-\tag{7}
+\Vert W\Vert\le q/\sqrt{\lambda_B}.
+\qquad\text{(7)}
 $$
 
 The output of $W$ may lie outside the support of $\omega_B$; (7) does not discard those directions.
@@ -118,7 +118,7 @@ Consider the operator on the system
 $$
 L=P V^\dagger
 \left[(H\otimes I_E)W-WH\right]P.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Operators supported away from $B$ intertwine with the local map $W$. Thus the bracket in (8) equals
@@ -127,12 +127,12 @@ $$
 (H_B\otimes I_E)W-WH_B,
 $$
 
-and $L$ is supported on $C$. Since $\|V\|=1$, any scalar shift of $H_B$ cancels from this bracket, and (7) gives
+and $L$ is supported on $C$. Since $\Vert V\Vert=1$, any scalar shift of $H_B$ cancels from this bracket, and (7) gives
 
 $$
-\|L\|\le2h_B\|W\|
+\Vert L\Vert\le2h_B\Vert W\Vert
 \le\frac{2h_Bq}{\sqrt{\lambda_B}}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The purpose of $L$ is an expectation identity, not an operator identity with the channel's full energy-change observable. For every operator $X$ supported on Alice's region,
@@ -140,7 +140,7 @@ The purpose of $L$ is an expectation identity, not an operator identity with the
 $$
 \langle XL\rangle
 =\left\langle X\left(\mathcal E^*(H)-H\right)\right\rangle.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 To verify (10), first remove the exterior support projectors in the expectation using $P|\Omega\rangle=|\Omega\rangle$ and $[X,P]=0$. Next use
@@ -162,15 +162,15 @@ $$
 
 Subtracting $\langle XH\rangle=0$ establishes (10). Although $H$ itself can overlap Alice, its channel-induced difference is supported on $C$, which is disjoint from Alice. This is why the actual postmeasurement energy change can be represented by (10).
 
-Taking $X=I$ gives $\operatorname{Tr}(\omega_CL)=Q$. Taking $X=E_m$, using the conditional-state identity in the model, gives
+Taking $X=I$ gives $\mathrm{Tr}(\omega_CL)=Q$. Taking $X=E_m$, using the conditional-state identity in the model, gives
 
 $$
-\operatorname{Tr}(\sigma_mL)
-=\operatorname{Tr}\!\left[\rho_m\left(\mathcal E^*(H)-H\right)\right].
-\tag{11}
+\mathrm{Tr}(\sigma_mL)
+=\mathrm{Tr}\left[\rho_m\left(\mathcal E^*(H)-H\right)\right].
+\qquad\text{(11)}
 $$
 
-The operator $L$ need not be Hermitian. The specific expectations in (11) are real because they equal physical energy changes. Equivalently, one can use $(L+L^\dagger)/2$, whose norm is no larger than $\|L\|$.
+The operator $L$ need not be Hermitian. The specific expectations in (11) are real because they equal physical energy changes. Equivalently, one can use $(L+L^\dagger)/2$, whose norm is no larger than $\Vert L\Vert$.
 
 ### 4. Optimize cost against response
 
@@ -179,12 +179,12 @@ Apply (5), (9), and (11) to the channel chosen in outcome $m$. Hölder's inequal
 $$
 \begin{aligned}
 g_m
-&=-Q-\operatorname{Re}\operatorname{Tr}(\delta_mL)\\
+&=-Q-\mathrm{Re}\mathrm{Tr}(\delta_mL)\\
 &\le-\kappa_Bq^2+
-\frac{2h_B}{\sqrt{\lambda_B}}\|\delta_m\|_1q\\
-&\le\frac{h_B^2}{\kappa_B\lambda_B}\|\delta_m\|_1^2.
+\frac{2h_B}{\sqrt{\lambda_B}}\Vert\delta_m\Vert_1q\\
+&\le\frac{h_B^2}{\kappa_B\lambda_B}\Vert\delta_m\Vert_1^2.
 \end{aligned}
-\tag{12}
+\qquad\text{(12)}
 $$
 
 The last line maximizes a concave quadratic over $q\ge0$. Allowing $q>1$ only enlarges the upper bound. If $q=0$, then $W=0$, and the same identity shows that the channel produces no conditioned energy change. Thus zero-cost directions associated with an unoccupied local subspace do not create a linear-response loophole.
@@ -192,8 +192,8 @@ The last line maximizes a concave quadratic over $q\ge0$. Allowing $q>1$ only en
 Averaging (12) proves the first inequality in (2). Quantum Pinsker's inequality, with natural logarithms, states
 
 $$
-\|\sigma_m-\omega_C\|_1^2
-\le2D(\sigma_m\|\omega_C).
+\Vert\sigma_m-\omega_C\Vert_1^2
+\le2D(\sigma_m\Vert\omega_C).
 $$
 
 The weighted sum of these relative entropies is $I(M:C)$. Finally, the measurement map on $A$ is a local channel from $A$ to the classical record $M$, so data processing gives
@@ -201,7 +201,7 @@ $I(M:C)\le I(A:C)_\omega$. These standard information inequalities are reviewed 
 
 ## Consequences for connected correlations and spatial decay
 
-The conditional trace-norm estimate also controls the energy through the square of the ground state's bounded-observable connected correlation $\mathcal C(A:C)$. Let $r_A=\operatorname{rank}(\omega_A)$ and $\lambda_A=\lambda_{\min}^{+}(\omega_A)$. The support-compressed effect argument in [Correlation bounds](correlation_bounds.md) gives
+The conditional trace-norm estimate also controls the energy through the square of the ground state's bounded-observable connected correlation $\mathcal C(A:C)$. Let $r_A=\mathrm{rank}(\omega_A)$ and $\lambda_A=\lambda_{\min}^{+}(\omega_A)$. The support-compressed effect argument in [Correlation bounds](correlation_bounds.md) gives
 
 $$
 E_{\mathrm{ext}}

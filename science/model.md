@@ -32,7 +32,7 @@ where $H_{\mathrm{out}}$ acts trivially on $B$, and $H_B$ is supported on a neig
 Use the centered operator-norm scale
 
 $$
-h_B=\inf_{c\in\mathbb R}\|H_B-cI_C\|
+h_B=\inf_{c\in\mathbb R}\Vert H_B-cI_C\Vert
 =\frac{\lambda_{\max}(H_B)-\lambda_{\min}(H_B)}{2}.
 $$
 
@@ -51,7 +51,7 @@ The protocol is instantaneous in the following precise sense: there is no interv
 For every operator $O$ supported on $B$, including a non-Hermitian operator, define
 
 $$
-\operatorname{Var}_{\omega}(O)
+\mathrm{Var}_{\omega}(O)
 =\langle O^\dagger O\rangle-|\langle O\rangle|^2.
 $$
 
@@ -60,19 +60,19 @@ Assume there is a constant $\kappa_B>0$ such that
 $$
 \boxed{
 \langle O^\dagger H O\rangle
-\ge\kappa_B\operatorname{Var}_{\omega}(O)
+\ge\kappa_B\mathrm{Var}_{\omega}(O)
 \quad\text{for every }O\text{ on }B.
 }
-\tag{M1}
+\qquad\text{(M1)}
 $$
 
 The largest valid constant is
 
 $$
 \kappa_B^{\mathrm{opt}}
-=\inf_{\operatorname{Var}_{\omega}(O)>0}
+=\inf_{\mathrm{Var}_{\omega}(O)>0}
 \frac{\langle O^\dagger H O\rangle}
-{\operatorname{Var}_{\omega}(O)}.
+{\mathrm{Var}_{\omega}(O)}.
 $$
 
 A smaller positive lower bound is sufficient. A condition quantified only over unitary operators would suffice for a unitary-only version of the theorem, but it does not by itself establish the result for arbitrary channels. The all-operator quantifier in (M1) permits the inequality to be summed over Kraus operators.
@@ -106,7 +106,7 @@ $$
 H\ge\Delta(I-\omega)
 \quad\Longrightarrow\quad
 \langle O^\dagger H O\rangle
-\ge\Delta\operatorname{Var}_{\omega}(O).
+\ge\Delta\mathrm{Var}_{\omega}(O).
 $$
 
 Thus $\kappa_B=\Delta$ is always a valid choice in a finite gapped system. A lower bound uniform in system size is a separate requirement when taking a family or thermodynamic limit. Local passivity and the role of ground-state entanglement have substantial precedent in [Alhambra et al.](../references/RELATED_WORK.md#alhambra2019); the present work uses the quantitative condition (M1) to control feedback that depends on a remote measurement record.
@@ -126,16 +126,16 @@ $$
 \rho_m=
 \frac{1}{p_m}\sum_\alpha M_{m\alpha}\omega M_{m\alpha}^\dagger,
 \qquad
-\sigma_m=\operatorname{Tr}_{\Lambda\setminus C}\rho_m.
+\sigma_m=\mathrm{Tr}_{\Lambda\setminus C}\rho_m.
 $$
 
 Because Alice is disjoint from $C$, every operator $Y_C$ obeys
 
 $$
-p_m\operatorname{Tr}(\sigma_mY_C)=\langle E_mY_C\rangle,
+p_m\mathrm{Tr}(\sigma_mY_C)=\langle E_mY_C\rangle,
 \qquad
 \sum_m p_m\sigma_m=\omega_C.
-\tag{M2}
+\qquad\text{(M2)}
 $$
 
 Thus the effect $E_m$, rather than the details of its local implementation, determines the conditional state relevant to Bob's energy change. The record-neighborhood state is
@@ -147,7 +147,7 @@ $$
 All information quantities use natural logarithms. In particular,
 
 $$
-I(M:C)=\sum_m p_mD(\sigma_m\|\omega_C),
+I(M:C)=\sum_m p_mD(\sigma_m\Vert\omega_C),
 $$
 
 where $D$ is quantum relative entropy. The averaged state in (M2) ensures that the conditional supports lie within the support of $\omega_C$.
@@ -166,15 +166,15 @@ The total system energy change caused by this feedback is localized:
 $$
 \mathcal E_m^*(H)-H
 =\mathcal E_m^*(H_B)-H_B.
-\tag{M3}
+\qquad\text{(M3)}
 $$
 
 Equation (M3) holds because the map is trace preserving and $H_{\mathrm{out}}$ acts trivially on $B$. Define
 
 $$
 g_m=
-\operatorname{Tr}(H\rho_m)
--\operatorname{Tr}\!\left[H(\mathcal E_m\otimes\operatorname{id})(\rho_m)\right],
+\mathrm{Tr}(H\rho_m)
+-\mathrm{Tr}\left[H(\mathcal E_m\otimes\mathrm{id})(\rho_m)\right],
 \qquad
 E_{\mathrm{ext}}=\sum_m p_m g_m.
 $$
@@ -190,7 +190,7 @@ This distinction also separates the present observable from a bound on the reduc
 Let
 
 $$
-P_B=\operatorname{supp}(\omega_B),
+P_B=\mathrm{supp}(\omega_B),
 \qquad
 \lambda_B=\lambda_{\min}^{+}(\omega_B)>0.
 $$
